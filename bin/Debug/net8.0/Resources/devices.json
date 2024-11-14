@@ -1,0 +1,8 @@
+{
+  "Android_First_Simulator": {
+    "capabilities": {
+      "platformVersion": "13.0",
+      "udid": "emulator-5554"
+    }
+  }
+}

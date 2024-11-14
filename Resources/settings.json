@@ -1,0 +1,80 @@
+{
+  "platformName": "android",
+  "isRemote": false,
+  "remoteConnectionUrl": "http://127.0.0.1:4723/wd/hub",
+  "screensLocation": "",
+
+  "driverSettings": {
+    "android": {
+      "deviceKey": "Android_First_Simulator",
+      "capabilities": {
+        "platformName": "android",
+        "automationName": "uiautomator2",
+        "appPackage": "com.android.chrome",
+        "appActivity": "com.google.android.apps.chrome.Main",
+        "autoLaunch": "false",
+        "newCommandTimeout": "120",
+        "fullReset": false,
+        "noReset": true,
+        "enforceXPath1": true,
+        "allowInvisibleElements": true,
+        "enableWebviewDetailsCollection": true,
+        "pageLoadStrategy": "normal"
+      }
+    }
+
+  },
+  "ios": {
+    "deviceKey": "iOS_Simulator",
+    "capabilities": {
+      "app": "./Resources/Applications/TheApp-v1.10.0.app.zip",
+      "platformName": "iOS",
+      "automationName": "XCUITest",
+      "bundleId": "io.cloudgrey.the-app",
+      "wdaLaunchTimeout": 90000,
+      "wdaStartupRetries": 4,
+      "wdaStartupRetryInterval": 20000,
+      "noReset": true,
+      "isHeadless": true,
+      "simulatorStartupTimeout": 300000
+    }
+  }
+,
+  "localServiceSettings": {
+    "arguments": {
+      "--allow-insecure": "chromedriver_autodownload"
+    },
+    "capabilities": {
+    }
+  },
+  "timeouts": {
+    "timeoutImplicit": 0,
+    "timeoutCondition": 45,
+    "timeoutPollingInterval": 300,
+    "timeoutCommand": 400
+  },
+  "retry": {
+    "number": 3,
+    "pollingInterval": 300
+  },
+  "logger": {
+    "language": "en"
+  },
+  "elementCache": {
+    "isEnabled": true
+  },
+  "touchActions": {
+    "swipe": {
+      "duration": 1,
+      "retries": 5,
+      "verticalOffset": 0.2,
+      "horizontalOffset": 0.5
+    }
+  },
+  "visualization": {
+    "defaultThreshold": 0.012,
+    "comparisonWidth": 16,
+    "comparisonHeight": 16,
+    "pathToDumps": "./Resources/VisualDumps/"
+  }
+}
